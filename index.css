@@ -6,7 +6,45 @@ body {
 }
 
 .palm {
-    animation: wave 2s ease-in-out infinite;
+  animation: wave 2s ease-in-out infinite;
+}
+
+#myPhoto {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#myPhoto:hover > img {
+  content: url("./assets/unnamed.gif");
+}
+
+li {
+  position: relative;
+  transition: 500ms;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(-95px);
+  transition: 500ms;
+}
+
+li:hover::before {
+  transform: skewX(45deg) translateX(95px);
+}
+
+li:hover {
+  transform: translateY(-15px);
 }
 
 @keyframes wave {

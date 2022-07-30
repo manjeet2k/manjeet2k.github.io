@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manjeet's Portfolio</title>
-    <link rel="stylesheet" href="./index.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body class="w-full min-h-screen bg-gray-800 text-white">
-    <section class="w-full min-h-screen">
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="w-full h-full absolute object-cover"
-      >
-        <source src="./assets/masthead-bg.mp4" type="video/mp4" />
-      </video>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manjeet's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/2edd77f964.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-gray-800 text-white">
+  <section class="w-full h-full min-h-screen">
+    <video autoplay loop muted playsinline poster="./assets/poster.png"
+      class="w-full h-full min-h-screen absolute object-cover">
+      <source src="./assets/masthead-bg.mp4" type="video/mp4" />
+      <source src="./assets/masthead-bg.webm" type="video/webm" />
+    </video>
+
+    <div
+      class="p-2 w-full min-h-screen flex flex-col justify-center relative text-center my-auto drop-shadow-[0_12px_6px_rgba(0,0,0,0.8)]">
       <div
-        class="w-full h-screen flex flex-col justify-center relative text-center my-auto drop-shadow-[0_12px_6px_rgba(0,0,0,0.8)] backdrop-blur"
-      >
-        <div class="mt-auto flex flex-col-reverse md:flex-row justify-between">
-          <div class="w-full md:w-1/2 text-center md:text-left px-2 md:px-8">
-            <p class="text-xl">Hello there! <span class="palm">👋</span</p>
-            <h1 class="text-3xl md:text-5xl py-2">
-              Myself
-              <span
-                class="bg-gradient-to-tr from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent"
-                >Manjeet Singh</span
-              >,
-            </h1>
+        class="w-full max-w-[420px] md:max-w-full md:w-4/5 mt-auto mx-auto p-2 md:p-8 rounded-lg bg-gray-400 bg-opacity-25 backdrop-blur-xs flex flex-col-reverse md:flex-row justify-between">
+        <div class="w-full md:w-1/2 text-center md:text-left px-2 md:px-8">
+          <p id="greet" class="text-xl">
+            नमस्ते! <span class="palm">🙏</span></p>
+          <h1 class="text-2xl md:text-5xl py-2">
+            I'm
+            <span class="bg-gradient-to-tr from-indigo-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+              Manjeet Singh
+            </span>
+          </h1>
 
-            <p class="text-xl md:text-2xl text-white py-8">
-              I'm a full-stack web developer with a passion for creating
-              beautiful, responsive websites.
-            </p>
-          </div>
-
-          <img
-            src="./assets/profile-pic.png"
-            alt="manjeet_profile_picture"
-            class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto my-4 rounded-full"
-          />
+          <p class="text-left text-lg md:text-2xl text-white py-4 md:py-8">
+            I'm a full-stack web developer with a passion for creating
+            beautiful, responsive websites.
+          </p>
         </div>
 
-        <ul class="w-full flex justify-center mt-auto mb-8">
-          <li class="w-10 mx-4 hover:animate-bounce animate-ease-in-out">
-            <a href="https://github.com/manjeet2k" target="_blank" title="My Github">
-              <img src="./assets/github.png" alt="github" />
-            </a>
-          </li>
-          <li class="w-10 mx-4 hover:animate-bounce animate-ease-in-out">
-            <a href="mailto:manjeetsgh11@gmail.com">
-              <img src="./assets/gmail.png" alt="gmail" title="Mail me" />
-            </a>
-          </li>
-          <li class="w-10 mx-4 hover:animate-bounce animate-ease-in-out">
-            <a href="https://www.linkedin.com/in/manjeetsgh/" target="_blank" title="My linkedin profile">
-              <img src="./assets/linkedin.png" alt="linkedin" />
-            </a>
-          </li>
-          <li class="w-10 mx-4 hover:animate-bounce animate-ease-in-out">
-            <a href="https://open.spotify.com/user/21kjrorsk352ibi23pbhjcbaa/playlist/1oaCoDJ7x4qqFVbmXumk8q" title="My spotify playlist" target="_blank">
-              <img src="./assets/spotify.png" alt="spoitfy playlist" />
-            </a>
-          </li>
-        </ul>
+        <div id="myPhoto"
+          class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] mx-auto md:ml-auto md:mr-16 my-4 rounded-full overflow-hidden">
+          <img src="./assets/profile-pic.png" alt="manjeet_profile_picture" />
+        </div>
       </div>
-    </section>
-  </body>
+
+      <ul class="w-full bottom-0 flex justify-center mt-auto mb-8">
+        <li class="w-16 h-16 text-2xl mx-2 md:mx-4 backdrop-blur-xs bg-gray-200 bg-opacity-25">
+          <a class="w-full h-full flex justify-center items-center" href="https://github.com/manjeet2k" target="_blank"
+            title="My Github">
+            <i class="text-white fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="w-16 h-16 text-2xl mx-2 md:mx-4 backdrop-blur-xs bg-gray-200 bg-opacity-25">
+          <a class="w-full h-full flex justify-center items-center" href="mailto:manjeetsgh11@gmail.com">
+            <i class="text-white fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li class="w-16 h-16 text-2xl mx-2 md:mx-4 backdrop-blur-xs bg-gray-200 bg-opacity-25">
+          <a class="w-full h-full flex justify-center items-center" href="https://www.linkedin.com/in/manjeetsgh/"
+            target="_blank" title="My linkedin profile">
+            <i class="text-white fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="w-16 h-16 text-2xl mx-2 md:mx-4 backdrop-blur-xs bg-gray-200 bg-opacity-25">
+          <a class="w-full h-full flex justify-center items-center"
+            href="https://open.spotify.com/user/21kjrorsk352ibi23pbhjcbaa/playlist/1oaCoDJ7x4qqFVbmXumk8q"
+            title="My spotify playlist" target="_blank">
+            <i class="text-white fab fa-spotify"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+
 </html>
